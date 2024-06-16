@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Francesco di Vita">
+    <meta name="keywords" content="biografia, competenze e svago">
+    <meta name="author" content="Francesco Davide di Vita">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    <link href="https://fonts.cdnfonts.com/css/sf-sports-night" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="about.css">
+
+    <title>Pagina About</title>
+</head>
+<body>
+
+    <header>
+        <nav >
+            <div class="container-ico">
+            <img class="favicon" alt="logo" title="logo" src="./Images/favicon.ico">
+            </div>
+           
+            <ul class="navbar-link">
+                <li class="link"><a href="index.html" >Biografia</a></li>
+                <li class="link"><a href="./about.html">About </a></li>
+                <li class="link"><a href="./contatto.html">Contatto</a></li>
+            </ul>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+         
+<aside class="social-links">
+    <a href="https://www.vinted.it/member/204305152" target="_blank"><img src="./Images/Vinted_Logo_2022.svg.png" alt="Vinted"></a>
+    <a href="https://github.com/mister-nothing00" target="_blank"><img src="./Images/github.png" alt="GitHub"></a>
+    <a href="https://www.instagram.com/francesc0divita/" target="_blank"><img src="./Images/instagram.png" alt="Instagram"></a>
+    <a href="https://www.linkedin.com/in/francesco-di-vita-113355183/" target="_blank"><img src="./Images/linkedin.png" alt="LinkedIn"></a>
+    <a href="https://wa.me/qr/CVZFMTBLECUZI1" target="_blank"><img src="./Images/whatsapp.png" alt="WhatsApp"></a>
+  
+</aside>
+
+<main>
+    <section>
+        
+        <div class="container-cover">
+            <img alt="cover" title="cover" class="cover" src="./Images/cover-1.jpg">
+        </div>
+
+        <div class="container-bio">
+          
+            <h1 class="titolo-bio">BIOGRAFIA</h1>
+
+            <p class="paragrafo-bio">Sono Francesco, ho 22 anni e ho scelto la programmazione <strong> per dare sfogo alla mia intensa immaginazione</strong>, come mestiere nella mia vita.<br> Sin da piccolo, ho aiutato e continuo tutt'ora ad aiutare coetanei e persone più grandi di me a risolvere i loro problemi informatici. Adesso mi sto dedicando alla creazione di siti web e web app, potendo così essere d'<u>aiuto alle persone attraverso l'informatica</u>. In questa pagina, voglio trasmettere lo <strong><em> Spirito</em></strong> con cui affronto la vita, grazie a un'attenta introspezione, <strong> condividendo </strong> alcune <strong> attività </strong>che mi  <em> piacciono</em> o mi <em>interessano</em>.</p>        
+    </div>
+    <h2 >Hobby personali</h2>
+</section>
+
+
+
+
+<section id="sezioni">
+   
+    <div class="container">
+        <img alt="img-1" title="img-1" src="./Images/me-1.jpeg">
+        <div>
+           
+          <h3>Carattere  </h3>
+        <p>Adattabile, collaborativo,  sincero. <br> 
+            Non mi piace inserirmi in situazioni in cui non posso essere leale con me stesso e libero. Amo e sono a favore del diritto di parola, mi piace poter dare sfogo alle idee e agli obiettivi per un buon futuro. Sono determinato e ho un forte senso di responsabilità.
+         </p>
+       
+    </div>
+    </div>
+
+</section>
+
+<hr>
+
+<section id="sezioni">
+    <div class="container">
+        <img alt="img-1" title="img-1" src="./Images/momento-4.jpeg">
+        <div class="container-text">
+          <h3>Piaceri </h3>
+        <p>Mi piace concedermi un po' di relax e piacere, anche esagerando un po', non badando ai prezzi o ai bisogni. Dio mi concede ogni giorno sempre di più di quello di cui ho bisogno e gliene sono grato. Mi piace ritrovare l'equilibrio, la forza e la carica per superare momenti difficili.</p>
+
+    <span>15/08/23 </span>    
+    </div>
+    </div>
+
+</section>
+<hr>
+
+<section id="sezioni">
+    <div class="container">
+        <img alt="img-1" title="img-1" src="./Images/momento-2.jpeg">
+        <div>
+          <h3>Viaggiare </h3>
+        <p>Credo che non ci sia sensazione più bella di salire su un aereo e poter conoscere persone, luoghi e culture, anche in Italia. Spero un giorno di poter lavorare con questo lavoro da remoto, così da poter conoscere e viaggiare per il mondo.</p>
+
+    <span>16/02/23</span>    
+    </div>
+
+    </div>    
+
+    <h2 style="margin: 160px auto;">Momenti </h2>
+
+</section>
+
+
+
+
+
+
+<section id="section-3">
+   
+    <h4>Momenti</h4>
+             
+    <div class="carousel-container">
+        
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="./Images/momento-1.jpeg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <video src="./Images/momento-3.mp4" controls></video>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/momento-2.jpeg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/momento-4.jpeg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+
+<script>// script.js
+
+    const carousel = document.querySelector('.carousel');
+    
+    carousel.addEventListener('mouseover', () => {
+        carousel.style.animationPlayState = 'paused';
+    });
+    
+    carousel.addEventListener('mouseout', () => {
+        carousel.style.animationPlayState = 'running';
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.navbar-link');
+
+    burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+    
+</script>
+
+</body>
+</html>

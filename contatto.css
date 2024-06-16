@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*scala dimensioni 8px
+
+font-family: 'SF Sports Night', sans-serif;
+    font-family: 'SF Sports Night AltUpright', sans-serif;
+    font-family: 'SF Sports Night Alternate', sans-serif;
+    font-family: 'SF Sports Night NS', sans-serif;
+    font-family: 'SF Sports Night NS AltUpright', sans-serif;
+    font-family: 'SF Sports Night NS Alternate', sans-serif;
+    font-family: 'SF Sports Night NS Upright', sans-serif;
+    font-family: 'SF Sports Night Upright', sans-serif;
+    
+    
+PALETTE COLORI:
+
+VERDE CHIARO: #50A840;
+
+VERDER + SCURO : #45913F;
+
+ARANCIONE: #E08E26;
+
+VIOLETTO: #93193D;
+
+PASTEL:
+
+VIOLA: #fe0596;
+
+GRIGIO CHIARO: #C8C8C8;
+*/
+    
+
+body{
+    background-color: black;
+    opacity: 0.9;
+    font-family: 'Open sans', sans-serif ;
+    font-size: small;
+    width: 100%;
+   
+}
+
+nav{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    margin:40px  auto;
+    
+}
+.container-ico{
+    display: inline;
+    width: 100%;
+    margin: 0;
+}
+
+img{
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(143, 139, 139, 0.2), 
+    0 8px 24px rgba(168, 159, 159, 0.19); /* Aggiunge l'ombra */
+    width: 80px;
+    margin-left: 24px;
+   
+   
+ 
+}
+
+
+.navbar-link{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.link{
+    display: block;
+    text-align: center;
+    color: aliceblue;
+    list-style-type: none;
+    width: auto;
+    margin-left: auto;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: medium;
+    position: relative;
+    top: 16px;
+}
+
+
+
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff9306;
+    font-family: 'Opens Sans', sans-serif;
+    font-size: large;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #e78403;
+    font-family: 'Opens Sans', sans-serif;
+    font-size: small;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #E08E26;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color:  #50A840;
+}
+
+
+
+/* Aside con link social */
+aside.social-links {
+    position: relative;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin: 40px auto;
+}
+
+aside.social-links a img {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+aside.social-links a:hover img {
+    transform: scale(1.2);
+}
+
