@@ -253,6 +253,7 @@ main {
     position: absolute;
     left: 0;
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .skills-content {
@@ -271,8 +272,9 @@ main {
 .experiences-section {
     width: 100%;
     padding: 50px 0;
-    background-color: #F4F4F4;
+    background-color: #FFFFFF;
     text-align: center;
+    margin: 80px auto ;
 }
 
 .experiences-container {
@@ -380,7 +382,7 @@ main {
 .projects-section {
     width: 100%;
     padding: 50px 0;
-  
+  background-color: #f4f4f4;
     text-align: center;
 }
 
@@ -489,6 +491,110 @@ main {
 
 }
 
+/*PAGINA PROGETTI*/
+.carousel {
+    width: 90%;
+    margin: auto;
+}
+.carousel-inner {
+    padding: 20px;
+}
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+}
+.card {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.carousel-item.active .card {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card:hover .project-overlay {
+    opacity: 1;
+}
+.project-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.project-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #64C9CF;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.project-link:hover {
+    background-color: #64C9CF;
+    color: #ffffff;
+}
+
+
+.carousel {
+    width: 90%;
+    margin: auto;
+}
+.carousel-inner {
+    padding: 20px;
+}
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+}
+.card {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+}
+.carousel-item.active .card {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -507,8 +613,8 @@ main {
 
 .contact-section {
     width: 100%;
-    padding: 50px 0;
-    background-color: #f4f4f4;
+    padding: 80px 0;
+    background-color: #FFFFFF;
     text-align: center;
 }
 
@@ -523,18 +629,21 @@ main {
     font-weight: 600;
     color: #333;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .contact-subtitle {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    color: #777;
+    text-align: center;
+    color: #6C757D;
     margin-bottom: 40px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
