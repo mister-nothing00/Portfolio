@@ -174,9 +174,9 @@ main {
 /*COMPETENZE*/
 
 .skills-section {
+    background-color: #151515;
     width: 100%;
     padding: 50px 0;
-    background-color: #ffffff;
     text-align: center;
 }
 
@@ -190,16 +190,18 @@ main {
     font-size: 32px;
     font-weight: 600;
     color: #64C9CF;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-align: left;
+    text-transform:capitalize;
+    letter-spacing: 1px;
 }
 
 .section-subtitle {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-align: left;
-    color: #abaaaa;
-    margin-bottom: 40px;
+    color: #6C757D;
+    margin-bottom: 80px;
 }
 
 .skills-content {
@@ -228,28 +230,29 @@ main {
 .skills-list ul {
     list-style: none;
     padding: 0;
-    margin: 40px 0 0 0 0;
+    margin:  8px 0 ;
+ 
 }
 
 .skills-list li {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-style: italic;
-    font-size: 20px;
-    color: #333333;
+    font-style: normal;
+    font-size: 22px;
+    color: #EFF0F1;
     margin-bottom: 15px;
     position: relative;
     padding-left: 40px;
+    text-transform: capitalize;
 }
 
 .skill-number {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: #64C9CF;
     position: absolute;
     left: 0;
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .skills-content {
